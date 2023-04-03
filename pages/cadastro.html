@@ -1,0 +1,103 @@
+<!-- ctrl kc comenta
+ctrl ku descomenta -->
+
+<!DOCTYPE html> 
+     <!-- versao 5 --> 
+<html lang="pt-br">
+    <!-- digitei examação e dei enter, e mudei a lingua para pt-br -->
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport  funciona pra mobile define largura e escala, content tag de compatibilidade -->
+    <link rel="stylesheet" href="/style.css"/>
+    <title>Formulario</title>
+</head>
+
+<body >
+    <form class="form size-form">
+        <h1 class="title"> Faça seu cadastro</h1>
+
+        <div class="box margin-botton24px">
+            <label for="name" class="label"> Nome completo </label>
+            <input type="text" id="name" class="input" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="margin-botton22px countryandbirth">
+           <div class=" box-double">
+                <label for="birthdate" class="label"> Data de Nascimento</label>
+                 <input type="date"  class= input id="birthdate" />
+           </div>
+            
+
+            <div class="box-double">
+                <label class="label" f>País</label>
+                <select class="countryselect input">
+                    <option>Brasil</option>
+                    <option>Argentina</option>
+                    <option>Irlanda</option>
+                    <option>Itália</option>
+                    <option>Austrália</option>
+                    <option>Nova Zelândia</option>
+                    <option>Noruega</option>
+                    <option>Cuba</option>
+    
+                </select>
+            </div>
+           
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="female">
+            <labem for-female> Feminino</labem>
+
+            <input type="radio" name="gender" id="masc">
+            <labem for-masc> Masculino</labem>
+
+            <input type="radio" name="gender" id="notdeclare">
+            <labem for-notdeclare> Não declarar</labem>
+        </div>
+
+        <div class=" box margin-botton22px">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input"  placeholder= "Digite seu email" required>
+            
+        </div>
+        
+        <div class=" box margin-botton22px">
+             <label for="password">Senha</label>
+             <input type="password" id="password" class="input" placeholder= "Crie uma senha" required>
+           
+        </div>
+
+        <div class="box margin-botton28px">
+            <label for="cofirmpassword">Confirme sua senha</label>
+            <input type="password" id="confirmpassword" class="input" placeholder= "Confirmar senha" required>
+        </div>
+       
+       
+
+        <p class="paragraph "> Aceito os
+        <a href="#" class=" link">termos e condições</a> e concordo com as
+        <a href="#" class=" link">politicas de privacidade</a> no Mais1Code.
+        <!-- coloca-se somente o endereço depois da barra, sem a porta 
+        e depois de colocar na pasta adiciona o endereço da pasta -->
+        </p>
+
+        <input type="submit" value="Cadastrar" class="button margin-bottom32">
+
+        
+        <p class="paragraph "> Ja tenho conta na Mais 1 Code
+            <a href="/cadastro.html" class=" link">Entre agora</a> 
+        </p>
+         
+            
+    
+
+
+    </form>
+   
+    
+</body>
+</html>

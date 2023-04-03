@@ -1,0 +1,57 @@
+<!-- ctrl kc comenta
+ctrl ku descomenta -->
+
+<!DOCTYPE html> 
+     <!-- versao 5 --> 
+<html lang="pt-br">
+    <!-- digitei examação e dei enter, e mudei a lingua para pt-br -->
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport  funciona pra mobile define largura e escala, content tag de compatibilidade -->
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Formulario</title>
+</head>
+
+<body >
+    <form class="form">
+        <h1 class="title"> Faça seu login</h1>
+
+        <div class="email-box">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input" placeholder= "Digite seu email" required>
+             <!-- required faz com que só envie se tiver algo escrito -->
+        </div>
+        
+        <div class="password-box">
+             <label for="password">Senha</label>
+             <input type="password" id="password" placeholder= "Crie uma senha" class="input" required>
+             <!-- password permite que a senha fique escondida, id permite o que?, placeholder 
+             escreve texto com instrução dentro da caixa -->
+        </div>
+
+        <div class="box-flex margin-bottom30">
+            <div class="wrapper-loggedin">
+                <input type="checkbox"  name="loggedin" id ="loggedin" class="input">
+                 <label for="loggedin" class="label">Mantenha-me conectado</label>
+            </div>
+            <a href="/pages/reset-senha.html" class="link"> Esqueci minha senha</a>
+            <!-- anchor, coloca uma # quando nao se tem o endereço ainda -->
+       </div>   
+
+        <button type="submit" class="button margin-bottom32">Entrar</button>
+        <!-- submit eh enviar, aqui poderia ser input tbm no lugar de botão --> 
+
+        <p class="paragraph "> Ainda não tem conta?
+        <a href="/pages/cadastro.html" class=" link">Cadastre-se</a>
+        <!-- coloca-se somente o endereço depois da barra, sem a porta 
+        e depois de colocar na pasta adiciona o endereço da pasta -->
+        </p>
+
+    </form>
+   
+    
+</body>
+</html>
